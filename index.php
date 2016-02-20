@@ -6,6 +6,7 @@ Description: Allows you to add indicators for various states on ACF flexible con
 Author: Ionuț Staicu
 Version: 0.0.1
 Author URI: http://ionutstaicu.com
+License: MIT
 */
 
 if ( !defined( 'ABSPATH' ) ) exit;
