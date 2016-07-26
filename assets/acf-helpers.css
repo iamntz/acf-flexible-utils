@@ -48,3 +48,7 @@
   margin-left:-8px;
   top:100%;
 }
+
+.acf-clear-left {
+  clear:left !important;
+}
