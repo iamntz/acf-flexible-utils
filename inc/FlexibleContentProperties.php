@@ -17,7 +17,9 @@ class FlexibleContentProperties
 
 	public function enqueueScripts()
 	{
-		wp_enqueue_script('acf_flexible_utils', plugin_dir_url($this->pluginPath) . 'assets/acf-flexible-utils.js');
+		wp_register_script( 'acf_flexible_utils', plugin_dir_url($this->pluginPath) . 'assets/acf-flexible-utils.js', array(), 1, true );
+		wp_enqueue_script('acf_flexible_utils');
+
 		wp_enqueue_style('acf_flexible_utils', plugin_dir_url($this->pluginPath) . 'assets/acf-helpers.css');
 	}
 
