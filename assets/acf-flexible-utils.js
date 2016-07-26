@@ -29,15 +29,13 @@ function ntzACFUtilities() {
   $(document).on('change', '.js-disableSection', setSectionProperties);
   $(document).on('keyup', '.js-title', setSectionProperties);
 
-  if (typeof acf !== undefined) {
-    acf.add_action('append', refreshSectionProperties);
-    acf.add_action('show_field', refreshSectionProperties);
-    acf.add_action('refresh', refreshSectionProperties);
-  }
+  acf.add_action('append', refreshSectionProperties);
+  acf.add_action('show_field', refreshSectionProperties);
+  acf.add_action('refresh', refreshSectionProperties);
 
   refreshSectionProperties(document);
 }
 
-if (typeof acf !== undefined) {
+if (typeof acf != 'undefined') {
   acf.add_action('load', ntzACFUtilities);
 }
