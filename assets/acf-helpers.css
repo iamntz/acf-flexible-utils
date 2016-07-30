@@ -52,3 +52,7 @@
 .acf-clear-left {
   clear:left !important;
 }
+
+.acf-field .select2-container {
+  padding-top: 0;
+}
